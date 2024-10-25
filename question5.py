@@ -1,4 +1,3 @@
-# Ask the user to enter the age
 age = int(input("Enter your age: "))
 
 # Check if the person is a minor, adult, or senior

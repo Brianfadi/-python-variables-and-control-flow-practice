@@ -1,3 +1,6 @@
+from PIL.ImImagePlugin import number
+
+
 # Ask the user for a number
 number = int(input("Enter a number: "))
 

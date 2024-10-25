@@ -1,14 +1,20 @@
-# Ask the user for a score
-score = int(input("Enter your score (0-100): "))
 
-# Categorize the score into grades
-if 90 <= score <= 100:
-    print("Grade: A")
-elif 80 <= score < 90:
-    print("Grade: B")
-elif 70 <= score < 80:
-    print("Grade: C")
-elif 60 <= score < 70:
-    print("Grade: D")
-else:
-    print("Grade: F")
+def grade_categorizer(score):
+    # validations
+    if score < 0 or score > 100:
+        return "The score is invalid!"
+    else:
+
+        if score >= 90:
+            grade = 'A'
+        elif score >= 80:
+            grade = 'B'
+        elif score >= 70:
+            grade = 'C'
+        elif score >= 60:
+            grade = 'D'
+        else:
+            grade = 'F'
+
+        return grade
+print(grade_categorizer(50))

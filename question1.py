@@ -1,9 +1,20 @@
 # Assign values to variables a and b
-a = 10
-b = 5
+a = int(input("Enter value a : "))
+b = int(input("Enter value b : "))
+result = 0
 
-# Perform arithmetic operations and print the results
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
+# Addition
+result = a + b
+print("The addition result is " , result)
+
+# Subtraction
+result = b - a
+print("The subtraction result is " , result)
+
+# Multiplication
+result = a * b
+print("The multiplication result is " , result)
+
+# Division
+result = b / a
+print("The division result is " , result)
